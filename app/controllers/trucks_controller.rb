@@ -8,6 +8,7 @@ class TrucksController < ApplicationController
 
   # GET /trucks/1 or /trucks/1.json
   def show
+    @truck = Truck.find params[:id]
   end
 
   # GET /trucks/new
@@ -21,6 +22,7 @@ class TrucksController < ApplicationController
 
   # POST /trucks or /trucks.json
   def create
+    
     @truck = Truck.new(truck_params)
 
     respond_to do |format|

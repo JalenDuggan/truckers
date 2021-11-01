@@ -1,5 +1,5 @@
-<%= form_for(@truck) do |form| %>
-  <% if @truck.errors.any? %>
+<%= form_with(type: user) do |form| %>
+  <% if truck.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(truck.errors.count, "error") %> prohibited this truck from being saved:</h2>
 
@@ -22,28 +22,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :model %>
-    <%= form.text_field :model %>
+    <%= form.label :email %>
+    <%= form.date_select :email %>
   </div>
 
   <div class="field">
-    <%= form.label :year %>
-    <%= form.date_select :year %>
-  </div>
-
-  <div class="field">
-    <%= form.label :capacity %>
-    <%= form.number_field :capacity %>
-  </div>
-
-  <div class="field">
-    <%= form.label :reserved %>
-    <%= form.check_box :reserved %>
-  </div>
-
-  <div class="field">
-    <%= form.label :timestamps %>
-    <%= form.datetime_select :timestamps %>
+    <%= form.label :password %>
+    <%= form.text_field :password %>
   </div>
 
   <div class="actions">
