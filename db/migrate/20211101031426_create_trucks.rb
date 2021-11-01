@@ -3,7 +3,7 @@ class CreateTrucks < ActiveRecord::Migration[6.1]
     create_table :trucks do |t|
       t.string :name
       t.integer :company_id
-      t.string :type
+      t.string :model
       t.date :year
       t.integer :capacity
       t.boolean :reserved

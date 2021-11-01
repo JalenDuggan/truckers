@@ -3,7 +3,7 @@
 one:
   name: MyString
   company_id: 1
-  type: 
+  model: 
   year: 2021-11-01
   capacity: 1
   reserved: false
@@ -12,7 +12,7 @@ one:
 two:
   name: MyString
   company_id: 1
-  type: 
+  model: 
   year: 2021-11-01
   capacity: 1
   reserved: false

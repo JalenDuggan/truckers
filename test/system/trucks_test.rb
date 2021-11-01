@@ -19,7 +19,7 @@ class TrucksTest < ApplicationSystemTestCase
     fill_in "Name", with: @truck.name
     check "Reserved" if @truck.reserved
     fill_in "Timestamps", with: @truck.timestamps
-    fill_in "Type", with: @truck.type
+    fill_in "Model", with: @truck.model
     fill_in "Year", with: @truck.year
     click_on "Create Truck"
 
@@ -36,7 +36,7 @@ class TrucksTest < ApplicationSystemTestCase
     fill_in "Name", with: @truck.name
     check "Reserved" if @truck.reserved
     fill_in "Timestamps", with: @truck.timestamps
-    fill_in "Type", with: @truck.type
+    fill_in "Model", with: @truck.Model
     fill_in "Year", with: @truck.year
     click_on "Update Truck"
 

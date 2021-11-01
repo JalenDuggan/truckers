@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_11_01_031426) do
   create_table "trucks", force: :cascade do |t|
     t.string "name"
     t.integer "company_id"
-    t.string "type"
+    t.string "model"
     t.date "year"
     t.integer "capacity"
     t.boolean "reserved"
